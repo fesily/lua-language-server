@@ -5,7 +5,8 @@ Annotations are prefixed with `---`, like a Lua comment with one extra dash. To 
 
 ![](https://user-images.githubusercontent.com/1073877/111884243-a337c780-89c0-11eb-856e-b6c3b1042810.gif)
 
-> ℹ️ Note: The annotations used by the server are based off of [EmmyLua annotations](https://emmylua.github.io/annotation.html) but a [rename is in progress](https://github.com/LuaLS/lua-language-server/discussions/1587).
+> **Note**
+> The annotations used by the server are based off of [EmmyLua annotations](https://emmylua.github.io/annotation.html) but a [rename is in progress](https://github.com/LuaLS/lua-language-server/discussions/1587).
 
 > ⚠️ Warning: The annotations used by the server are [no longer cross-compatible](https://github.com/LuaLS/lua-language-server/issues/980) with [EmmyLua annotations](https://emmylua.github.io/annotation.html) since `v3.0.0`.
 
@@ -78,7 +79,8 @@ or
 ---| '<value>' [# description]
 ```
 
-> ℹ️ Note: The above pipe character (`|`) on the left is necessary for each line and does not signify an "or".
+> **Note**
+> The above pipe character (`|`) on the left is necessary for each line and does not signify an "or".
 
 **Examples**
 <details>
@@ -157,13 +159,15 @@ Force a type onto an expression.
 
 > ⚠️ Warning: This annotation cannot be added using `---@as <type>` - it must be done like `--[[@as <type>]]`.
 
-> ℹ️ Note: When marking an expression as an array, such as `string[]`, you must use `--[=[@as string[]]=]` due to the extra square brackets causing parsing issues.
+> **Note**
+> When marking an expression as an array, such as `string[]`, you must use `--[=[@as string[]]=]` due to the extra square brackets causing parsing issues.
 
 **Syntax**
 
 `--[[@as <type>]]`
 
-> ℹ️ Note: The square brackets in the above syntax definition do not refer to it being optional. Those square brackets must be used verbatim.
+> **Note**
+> The square brackets in the above syntax definition do not refer to it being optional. Those square brackets must be used verbatim.
 
 **Examples**
 <details>
@@ -410,7 +414,8 @@ Define a field within a table. Should be immediately following a [`@class`](http
 
 **Syntax**
 
-> ℹ️ Note: `\[` and `\]` below mean literal `[` and `]`
+> **Note**
+> `\[` and `\]` below mean literal `[` and `]`
 
 <br>
 
@@ -478,9 +483,10 @@ end
 
 <details>
 <summary>Typed field</summary>
-	
-> ℹ️ Note: named fields must be declared before typed field if type is string 
-	
+
+> **Note**
+> Named fields must be declared before typed field if type is string
+
 ```lua
 ---@class Numbers
 ---@field named string 
