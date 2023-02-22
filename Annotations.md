@@ -571,9 +571,9 @@ arr[1] = false
 arr[3] = "Correct"
 ```
 
-</details>
+See [#734](https://github.com/LuaLS/lua-language-server/issues/734#issuecomment-1436317116)
 
-<!-- FIXME: THIS IS BROKEN -->
+</details>
 
 <details>
 <summary>Dictionary class using generics</summary>
@@ -589,6 +589,8 @@ dict["foo"] = "bar?"
 
 dict["correct"] = true
 ```
+
+See [#734](https://github.com/LuaLS/lua-language-server/issues/734#issuecomment-1436317116)
 
 </details>
 
