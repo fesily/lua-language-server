@@ -499,7 +499,7 @@ local Numbers = {}
 <br>
 
 ### `@generic`
-Generics allow code to be reused and serve as a sort of "placeholder" for a type. Surrounding the generic in backticks (`` ` ``) will capture the value and use it for the type.
+Generics allow code to be reused and serve as a sort of "placeholder" for a type. Surrounding the generic in backticks (`` ` ``) will capture the value and use it for the type. [Generics are still WIP](https://github.com/LuaLS/lua-language-server/issues/1861).
 
 **Syntax**
 
@@ -553,8 +553,6 @@ local obj = new("Vehicle")
 ```
 
 </details>
-
-<!-- TODO: SEE IF THIS IS BROKEN -->
 
 <details>
 <summary>Array Class Using Generics</summary>
