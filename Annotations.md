@@ -421,7 +421,7 @@ Define a field within a table. Should be immediately following a [`@class`](http
 
 `---@field [scope] <name> <type> [description]`
 <br>
-`---@field [scope] \[<type>\] <type> [description]` 
+`---@field [scope] \[<type>\] <type> [description]`
 
 **Examples**
 <details>
@@ -489,7 +489,7 @@ end
 
 ```lua
 ---@class Numbers
----@field named string 
+---@field named string
 ---@field [string] integer
 local Numbers = {}
 ```
