@@ -5,7 +5,60 @@ They can be extremely powerful, but they can also come with [some performance is
 
 <br>
 
+## Custom
+You can create your own libraries through various methods.
+
+The definition files can be created using the same [annotations](https://github.com/LuaLS/lua-language-server/wiki/Annotations) you use in your Lua scripts. Make sure to include a [`@meta`](https://github.com/LuaLS/lua-language-server/wiki/Annotations#meta) tag in your definition files.
+
+<br>
+
+### Placing in Your Workspace
+**Difficulty:** Easy
+
+**Use Case:** Not Recommended
+
+This is the easiest method, as you only need to drop your library definitions and/or source code into your workspace directory (under a `definitions/` or `types/` directory is recommended).
+
+This may be usable for a very small project, however, for larger ones, especially those with source control, **it is not recommended.** This is because you now have your development definitions in with your source code making them hard to re-use and they will need to be git ignored anyways.
+
+<br>
+
+### Link to Workspace
+**Difficulty:** Easy
+
+**Use Case:** Any Workspace
+
+This method uses the [`workspace.library`](https://github.com/LuaLS/lua-language-server/wiki/Settings#workspacelibrary) setting to link the requested library to your workspace scope. This is great for allowing you to store your libraries elsewhere and then include them when needed through your [configuration file](https://github.com/LuaLS/lua-language-server/wiki/Configuration-File).
+
+Unless you **always** use a certain library, it is strongly recommended you only define `workspace.library` in each project/workspace using `.vscode/settings.json` or `.luarc.json` in order to prevent slowdowns from loading unnecessary libraries.
+
+<br>
+
+### Addon
+**Difficulty:** Medium
+
+**Use Case:** Proper Emulation of Target Environment
+
+This method is the most in-depth and allows you to very closely emulate your target environment for many projects with easy repeatability. If your target environment is a game engine where you may not have access to all of Lua, this is a great option.
+
+Check out the [Addons](Addons.md) page to learn more!
+
+Have an environment emulation to share? Add it to [LLS-Addons](https://github.com/LuaLS/LLS-Addons)!
+
 ## Built-in Libraries
+
+<blockquote>
+	<br>
+	<div align="center">
+		🚮 <b>DEPRECATED</b> 🚮
+	</div>
+	<br>
+	<div align="center">
+		<a href="https://github.com/LuaLS/lua-language-server/discussions/1950">Built-in libraries are going to be removed in a future version</a> in favour of using the addon manager and to cut down on bloat. You can of course still also manually download any of the addons from <a href="https://github.com/LuaLS/LLS-Addons">LLS-Addons</a> (or elsewhere) and add them to <a href="https://github.com/LuaLS/lua-language-server/wiki/Settings#workspaceuserthirdparty"><code>workspace.userThirdParty</code></a> or <a href="https://github.com/LuaLS/lua-language-server/wiki/Settings#workspacelibrary"><code>workspace.library</code></a>.
+	</div>
+	<br>
+</blockquote>
+
 There are a number of built-in third party libraries that can be found in [`meta/3rd/`](https://github.com/LuaLS/lua-language-server/tree/master/meta/3rd). These are all implemented as [environment emulations](#environment-emulation). These include:
 
 - `Cocos 4.0`
@@ -75,138 +128,6 @@ Here is an example of how you can apply the `OpenResty` library:
 
 
 The [`workspace.library`](https://github.com/LuaLS/lua-language-server/wiki/Settings#workspacelibrary) setting always follows the pattern of `${3rd}/LIBRARY_NAME/library`, but the other settings seen in the examples above are unique to the library being applied. To see the settings that the server would have [applied automatically](#automatically-applying), navigate to the library's [`config.lua`](#configuration-file) in the [`meta/3rd/`](https://github.com/LuaLS/lua-language-server/tree/master/meta/3rd) folder.
-
-<br>
-
-## Custom
-You can create your own libraries through various methods.
-
-The definition files can be created using the same [annotations](https://github.com/LuaLS/lua-language-server/wiki/Annotations) you use in your Lua scripts. Make sure to include a [`@meta`](https://github.com/LuaLS/lua-language-server/wiki/Annotations#meta) tag in your definition files.
-
-<br>
-
-### Placing in Your Workspace
-**Difficulty:** Easy
-
-**Use Case:** Not Recommended
-
-This is the easiest method, as you only need to drop your library definitions and/or source code into your workspace directory (under a `definitions/` directory is recommended).
-
-This may be usable for a very small project, however, for larger ones, especially those with source control, **it is not recommended.** This is because you now have your development definitions in with your source code making them hard to re-use and they will need to be git ignored anyways.
-
-<br>
-
-### Link to Workspace
-**Difficulty:** Easy
-
-**Use Case:** Any Workspace
-
-This method uses the [`workspace.library`](https://github.com/LuaLS/lua-language-server/wiki/Settings#workspacelibrary) setting to link the requested library to your workspace scope. This is great for allowing you to store your libraries elsewhere and then include them when needed through your [configuration file](https://github.com/LuaLS/lua-language-server/wiki/Configuration-File).
-
-Unless you **always** use a certain library, it is strongly recommended you only define `workspace.library` in each project/workspace using `.vscode/settings.json` or `.luarc.json` in order to prevent slowdowns from loading unnecessary libraries.
-
-<br>
-
-### Environment Emulation
-**Difficulty:** Medium
-
-**Use Case:** Proper Emulation of Target Environment
-
-This method is the most in-depth and allows you to very closely emulate your target environment for many projects with easy repeatability. This is how the [built-in libraries](#built-in-libraries) are implemented. If your target environment is a game engine where you may not have access to all of Lua, this is a great option.
-
-As well as providing definitions, you can also define when to suggest setting up the environment for this library, what changes to apply to the server's [configuration](https://github.com/LuaLS/lua-language-server/wiki/Configuration-File), and what [plugins](https://github.com/LuaLS/lua-language-server/wiki/Plugins) to use.
-
-#### Setup
-To get started, you will need *a* directory, anywhere on your machine, where all of your emulations can be stored e.g. `C:\Users\me\Documents\LuaEnvironments`. In your directory you will create a new directory for each environment to emulate. You will then need to add the path to your directory to [`workspace.userThirdParty`](https://github.com/LuaLS/lua-language-server/wiki/Settings#workspaceuserthirdparty).
-
-```bash
-📂 LuaEnvironments/
-    ├── 📂 Environment1/
-    │    ├── 📁 library/
-    │    ├── 📜 config.lua
-    │    └── 📜 plugin.lua
-    └── 📂 Environment2/
-         ├── 📁 library/
-         └── 📜 config.lua
-```
-
-##### Definition Files
-Your defintion files should have a [`@meta`](https://github.com/LuaLS/lua-language-server/wiki/Annotations#meta) annotation to mark them as such. They can then be placed in the `library/` directory within the environment they help emulate.
-
-##### Configuration File
-The `config.lua` file is what lets you configure when the emulation should be recommended and what settings to apply.
-
-```lua
--- config.lua
-
--- The name to use when suggesting this emulation. If omitted,
--- the name of the folder will be used
-name = "Example Environment"
-
--- A list of words to look for in Lua files. If a match is
--- found, this environment will be recommended
-words = {
-    "example", -- exact match
-    "testing%.%w+" -- wildcard match, matches testing.anyWord
-}
-
--- A list of filenames to look for in the workspace. If a
--- match is found, this environment will be recommended
-files = {
-    "example%.lua", -- exact match
-    "example/.*%.lua" -- wildcard match any Lua file in example/
-}
-
--- configuration values to set/override in the user's local
--- config file when this emulation is applied
-configs = {
-
-    -- Set boolean/string/number value
-    {
-        key    = "Lua.runtime.version",
-        action = "set",
-        value  = "LuaJIT"
-    },
-
-    -- Add to array
-    {
-        key    = "Lua.diagnostics.globals",
-        action = "add",
-        value  = "exampleValue"
-    },
-
-    -- Add prop to object
-    {
-        key    = 'Lua.runtime.special',
-        action = 'prop',
-        prop   = 'include',
-        value  = 'require',
-    },
-    {
-        key    = 'Lua.runtime.builtin',
-        action = 'prop',
-        prop   = 'io',
-        value  = 'disable',
-    }
-}
-
--- You can of course also execute Lua in here to make
--- things a little easier
-local GLOBALS = { "Global, Global2, Global3" }
-for _, name in ipairs(GLOBALS) do
-    table.insert(configs, {
-        key    = "Lua.diagnostics.globals",
-        action = "add",
-        value  = name
-    })
-end
-```
-
-See [settings](https://github.com/LuaLS/lua-language-server/wiki/Settings) for more info on `configs`.
-
-To include a [plugin](https://github.com/LuaLS/lua-language-server/wiki/Plugins), place it in the same location as your `config.lua` file.
-
-Have an environment emulation to share? [Post it in discussion #389](https://github.com/LuaLS/lua-language-server/discussions/389).
 
 ## Bundling in a plugin extension
 * _Disclaimer: This article was written by a [user](https://github.com/LuaLS/lua-language-server/issues/417)._
