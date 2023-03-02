@@ -595,7 +595,7 @@ See [#734](https://github.com/LuaLS/lua-language-server/issues/734#issuecomment-
 <br>
 
 ### `@meta`
-Marks a file as "meta", meaning it is used for definitions and not for its functional Lua code. Used internally by the language server for defining the built-in Lua libraries. If you are [writing your own library definition files](https://github.com/LuaLS/lua-language-server/wiki/Libraries#custom), you will probably want to include this annotation in them. Files with the `@meta` tag in them behave a little different:
+Marks a file as "meta", meaning it is used for definitions and not for its functional Lua code. Used internally by the language server for defining the built-in Lua libraries. If you are [writing your own definition files](https://github.com/LuaLS/lua-language-server/wiki/Libraries#custom), you will probably want to include this annotation in them. If you specify a name, it will only be able to be required by the given name. Giving the name `_` will make it unable to be required. Files with the `@meta` tag in them behave a little different:
 
 - Completion will not display context in a meta file
 - Hovering a `require` of a meta file will show `[meta]` instead of its absolute path
@@ -603,7 +603,7 @@ Marks a file as "meta", meaning it is used for definitions and not for its funct
 
 **Syntax**
 
-`---@meta`
+`---@meta [name]`
 
 **Examples**
 <details>
