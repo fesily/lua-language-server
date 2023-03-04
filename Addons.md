@@ -47,7 +47,7 @@ If the addon in question has been configured to allow automatic enabling, and yo
 ## Manually Enabling
 If the addon contains a `library/` directory, you will want to paste the **full** path to that directory in your [`workspace.library` setting](https://github.com/LuaLS/lua-language-server/wiki/Settings#workspacelibrary).
 
-If the `config.json` contains settings, you will have to manually copy them to your [configuration file](https://github.com/LuaLS/lua-language-server/wiki/Configuration-File).
+If the [`config.json`](#configjson) contains settings, you will have to manually copy them to your [configuration file](https://github.com/LuaLS/lua-language-server/wiki/Configuration-File).
 
 # VS Code Addon Manager
 The addon manager in VS Code allows you to easily browse addons from [LLS-Addons][LLS-Addons]. It can be opened from the command palette (<kbd>Ctrl + P</kbd>) by running the "Open Addon Manager" command (`lua.addon_manager.open`).
@@ -58,13 +58,13 @@ It will handle modifying your [configuration file](https://github.com/LuaLS/lua-
 
 The addon manager opens in a [webview](https://code.visualstudio.com/api/extension-guides/webview) (basically an iframe) that contains a [Vue.js webapp](https://github.com/LuaLS/vscode-lua-webvue).
 
-If you have feedback for the addon manager, please leave it in the [vscode-lua repository](https://github.com/LuaLS/vscode-lua) ❤️.
+If you have feedback on the addon manager, please leave it in the [vscode-lua repository](https://github.com/LuaLS/vscode-lua) ❤️.
 
 # Creating an Addon
 To create an addon, you will want to first create a directory where all your files will live. If you intend to make your addon publicly available, you will also want a remote repository where people can access it. Both GitHub and GitLab have been confirmed to work, although any service that provides Git cloning over HTTP should work.
 
 > **Note**
-> For details on how to get your addon visible in the VS Code addon manager, check out the [LLS-Addons repository](https://github.com/LuaLS/LLS-Addons#readme).
+> For details on how to publish your addon to the VS Code addon manager, check out the [LLS-Addons repository](https://github.com/LuaLS/LLS-Addons#readme).
 
 ## Structure of an Addon
 An addon that contains definitions should place them in a `library/` directory.
