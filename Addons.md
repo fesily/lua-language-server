@@ -27,6 +27,12 @@ You can then download the zip for that addon and unzip it to some directory, any
          ├── 📁 library/
          └── 📜 config.json
 ```
+Here is an example of what your setting may look like in your [configuration file](https://github.com/LuaLS/lua-language-server/wiki/Configuration-File).
+```json
+{
+    "Lua.workspace.userThirdParty": ["C:\Users\me\Documents\LuaAddons"]
+}
+```
 
 # Enabling Addons
 Addons define some configuration values in their [`config.json`](#configjson) file that are meant to be automatically applied, but can still be applied manually.
