@@ -67,7 +67,7 @@ To create an addon, you will want to first create a directory where all your fil
 > For details on how to publish your addon to the VS Code addon manager, check out the [LLS-Addons repository](https://github.com/LuaLS/LLS-Addons#readme).
 
 ## Structure of an Addon
-An addon that contains definitions should place them in a `library/` directory.
+An addon that contains definitions should place them in a `library/` directory. You can use the [LuaLS/addon-template](https://github.com/LuaLS/addon-template) to get up and running a little bit quicker.
 
 ```bash
 📂 myAddon/
