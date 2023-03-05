@@ -41,7 +41,7 @@ Unless you **always** use a certain library, it is strongly recommended you only
 
 This method is the most in-depth and allows you to very closely emulate your target environment for many projects with easy repeatability. If your target environment is a game engine where you may not have access to all of Lua, this is a great option.
 
-Check out the [Addons](Addons.md) page to learn more!
+Check out the [Addons](https://github.com/LuaLS/lua-language-server/wiki/Addons) page to learn more!
 
 Have an environment emulation to share? Add it to [LLS-Addons](https://github.com/LuaLS/LLS-Addons)!
 
