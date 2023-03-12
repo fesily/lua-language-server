@@ -59,7 +59,7 @@ Have an environment emulation to share? Add it to [LLS-Addons](https://github.co
 	<br>
 </blockquote>
 
-There are a number of built-in third party libraries that can be found in [`meta/3rd/`](https://github.com/LuaLS/lua-language-server/tree/master/meta/3rd). These are all implemented as [environment emulations](#environment-emulation). These include:
+There are a number of built-in third party libraries that can be found in [`meta/3rd/`](https://github.com/LuaLS/lua-language-server/tree/master/meta/3rd). These are all implemented as [addons](#addon). These include:
 
 - `Cocos 4.0`
 - `Jass`
