@@ -1063,7 +1063,7 @@ math.max(1, 2)
 <br>
 
 ### `@type`
-Mark a variable as being of a certain type. Union types are separated with a pipe character `|`. The `type` provided can be an [`@alias`](https://github.com/LuaLS/lua-language-server/wiki/Annotations#alias), [`@enum`](https://github.com/LuaLS/lua-language-server/wiki/Annotations#enum), or [`@class`](https://github.com/LuaLS/lua-language-server/wiki/Annotations#class) as well.
+Mark a variable as being of a certain type. Union types are separated with a pipe character `|`. The `type` provided can be an [`@alias`](https://github.com/LuaLS/lua-language-server/wiki/Annotations#alias), [`@enum`](https://github.com/LuaLS/lua-language-server/wiki/Annotations#enum), or [`@class`](https://github.com/LuaLS/lua-language-server/wiki/Annotations#class) as well. Please note that you cannot add a field to a class using `@type`, [you must instead use `@class`](https://github.com/LuaLS/lua-language-server/issues/1971#issuecomment-1458119701).
 
 **Syntax**
 
