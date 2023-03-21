@@ -12,3 +12,8 @@ if _G['DOC'] then
     require 'cli.doc'
     os.exit(0, true)
 end
+
+if _G['FORMAT'] then
+    require 'cli.format'
+    os.exit(0, true)
+end

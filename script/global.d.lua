@@ -52,6 +52,10 @@ CHECK = ''
 ---@type string
 DOC = ''
 
+--format lua path
+---@type string
+FORMAT = ''
+
 ---@type string | '"Error"' | '"Warning"' | '"Information"' | '"Hint"'
 CHECKLEVEL = 'Warning'
 
