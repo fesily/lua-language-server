@@ -33,6 +33,11 @@ exec "<path-to-directory>/bin/lua-language-server" "$@"
 
 You can also [build the language server yourself](#build).
 
+## Community Install Methods
+The methods below are maintained by community members.
+
+[asdf plugin](https://github.com/bellini666/asdf-lua-language-server)
+
 # Configuration
 Configuring the language server can be done in a number of ways. For more info, see the [configuration file page](https://github.com/LuaLS/lua-language-server/wiki/Configuration-File).
 
