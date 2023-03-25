@@ -142,4 +142,13 @@ To add an image, place a `!`, followed by the alt text in square brackets, with 
 </details>
 
 ## New line
-🚧 Under Review 🚧
+There are many ways to add newlines to your annotations.
+
+The most bulletproof way is to simply add an extra line of just `---`, although this functions like a paragraph break, not a newline.
+
+The below methods can be added to the end of a line:
+
+- HTML `<br>` tag (recommended)
+- Two trailing spaces
+- `\n` new line escape character
+- Markdown backslash `\` ([Not recommended](https://www.markdownguide.org/basic-syntax#line-break-best-practices))
