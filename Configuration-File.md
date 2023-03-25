@@ -1,6 +1,23 @@
 # The Configuration File
 There are multiple ways to provide a configuration file to customize how the language server operates. A full list of the available configuration settings can be found on the [settings page](https://github.com/LuaLS/lua-language-server/wiki/Settings).
 
+The server loads its settings from one of the following sources, in order of priority:
+
+1. The file specified by [`--configpath`](#-configpath)
+2. A `.luarc.json` file in the workspace
+3. The configuration file sent from the LSP client (like from VS Code)
+
+## JSON Schema
+[A JSON schema](https://github.com/LuaLS/vscode-lua/tree/master/setting) is available in multiple languages to help make the creation of a JSON configuration file easier.
+
+In VS Code, this schema is already injected into `.vscode/settings.json` and `.luarc.json` but for other editors where this is not the case, it can be added manually by adding the following to the start of your JSON file:
+
+```json
+{
+    "$schema": "https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema.json"
+}
+```
+
 ## Visual Studio Code
 In Visual Studio Code, you can use [the settings UI](https://github.com/LuaLS/lua-language-server/wiki/Getting-Started#configuration) or write directly to the `settings.json` file. You can also use a [`.luarc.json` file](#luarcjson).
 
@@ -15,17 +32,6 @@ The `settings.json` file can be found in the following OS-dependent locations:
 You can also define your settings on a [workspace-specific basis](https://code.visualstudio.com/docs/getstarted/settings#_workspace-settings), which can help [improve speeds](https://github.com/LuaLS/lua-language-server/wiki/FAQ#how-can-i-improve-startup-speeds) and is recommended for [project-specific](https://code.visualstudio.com/docs/getstarted/settings#_when-does-it-make-sense-to-use-workspace-settings) settings.
 
 For more details, read the [VS Code documentation](https://code.visualstudio.com/docs/getstarted/settings).
-
-## JSON Schema
-[A JSON schema](https://github.com/LuaLS/vscode-lua/tree/master/setting) is available in multiple languages to help make the creation of a JSON configuration file easier.
-
-In VS Code, this schema is already injected into `.vscode/settings.json` and `.luarc.json` but for other editors where this is not the case, it can be added manually by adding the following to the start of your JSON file:
-
-```json
-{
-    "$schema": "https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema.json"
-}
-```
 
 ## .luarc.json
 A `.luarc.json` file can be added to your workspace to apply a certain configuration to the server. This file must be written in JSON and can use the same [JSON schema](#json-schema) and settings as the other configuration files.
