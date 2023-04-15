@@ -9,8 +9,20 @@ The Lua Language Server can be easily installed for many major clients.
 ## Visual Studio Code
 The language server can be installed super easily for Visual Studio Code by installing the [`sumneko.lua` extension](https://marketplace.visualstudio.com/items?itemName=sumneko.lua).
 
+### Install
+[![Install in VS Code](https://img.shields.io/badge/Install%20For-VS%20Code-blue?style=for-the-badge&logo=visualstudiocode "Install in VS Code")](https://marketplace.visualstudio.com/items?itemName=sumneko.lua)
+
+The Visual Studio Code extension can be installed from the [marketplace](https://marketplace.visualstudio.com/items?itemName=sumneko.lua) or found in VS Code under `sumneko.lua`.
+
+### Configuration
+Configuration of the extension can be done from your VS Code settings (<kbd>Ctrl + ,</kbd>). Enter `@ext:sumneko.lua` in the search bar at the top and you will be presented with [all of the settings](https://github.com/LuaLS/lua-language-server/wiki/Settings) for the extension.
+
 ## NeoVim
-I recommend reading [Heiker's LSP guide](https://dev.to/vonheikemen/getting-started-with-neovims-native-lsp-client-in-the-year-of-2022-the-easy-way-bp3) if you want a good guide that starts at zero and gets you up and running.
+View the install instructions for NeoVim in the [nvim-lspconfig repo](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#lua_ls).
+
+For getting set up from scratch using Mason, read [Heiker's blog post](https://dev.to/vonheikemen/getting-started-with-neovims-native-lsp-client-in-the-year-of-2022-the-easy-way-bp3).
+
+For configuring, see the [configuration file page](https://github.com/LuaLS/lua-language-server/wiki/Configuration-File).
 
 ## Command Line
 The Lua language server can be run straight from the command line.
