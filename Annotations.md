@@ -34,6 +34,8 @@ Properly documenting types with the language server is very important and where 
 
 You can also simulate [classes](https://github.com/LuaLS/lua-language-server/wiki/Annotations#class) and [fields](https://github.com/LuaLS/lua-language-server/wiki/Annotations#field) and even [create your own types](https://github.com/LuaLS/lua-language-server/wiki/Annotations#alias).
 
+Adding a question mark `?` after a type like `boolean?` or `number?` is the same as saying `boolean|nil` or `number|nil`. This can be used to specify that something is either a specified type **or** nil. This can be very useful for function returns where a value **or** nil can be returned.
+
 Below is a list of how you can document more advanced types:
 
 |      Type       |               Document As                |
