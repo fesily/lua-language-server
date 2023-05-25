@@ -1,5 +1,11 @@
 # Settings
-A list of all settings that can be used to customize how the language server operates. All of these settings should be prefixed with `Lua.` e.g. `Lua.completion.enable` or `Lua.diagnostics.globals` when editing a [configuration file](https://github.com/LuaLS/lua-language-server/wiki/Configuration-File).
+A list of all settings that can be used to customize how the language server operates.
+
+> ❗Important
+>
+> All of these settings should be prefixed with `Lua.` e.g. `Lua.completion.enable` or `Lua.diagnostics.globals` when editing a [configuration file](https://github.com/LuaLS/lua-language-server/wiki/Configuration-File) - **except** when using a `.luarc.json` file.
+>
+> When using a `.luarc.json` file, the prefix is not needed and the settings can be entered as they appear on this page.
 
 ## addonManager
 Settings that affect the VS Code addon manager
