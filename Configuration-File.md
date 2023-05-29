@@ -34,7 +34,19 @@ You can also define your settings on a [workspace-specific basis](https://code.v
 For more details, read the [VS Code documentation](https://code.visualstudio.com/docs/getstarted/settings).
 
 ## .luarc.json
-A `.luarc.json` file can be added to your workspace to apply a certain configuration to the server. This file must be written in JSON and can use the same [JSON schema](#json-schema) and settings as the other configuration files.
+A `.luarc.json` file can be added to your workspace to apply a certain configuration to the server. This file must be written in JSON and can use the same [JSON schema](#json-schema) and settings as the other configuration files - which is highly recommended.
+
+> Note:
+> The `Lua.` prefix for settings is not necessary in a `.luarc.json` file!
+
+Here is a basic example of a `.luarc.json` file:
+```json
+{
+  "workspace.library": ["path/to/library/directory"],
+  "runtime.version": "Lua 5.3",
+  "hint.enable": false
+}
+```
 
 ## Custom Config File
 If you want to use your own custom configuration file, with whatever name you please, that is also an option - although it must be written in Lua or JSON.
