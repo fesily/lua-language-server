@@ -41,12 +41,17 @@ Below is a list of how you can document more advanced types:
 |      Type       |               Document As                |
 | :-------------: | :--------------------------------------: |
 |   Union Type    |            `TYPE_1 \| TYPE_2`            |
-|      Array      |             `<VALUE_TYPE>[]`             |
+|      Array      |              `VALUE_TYPE[]`              |
 |   Dictionary    |        `{ [string]: VALUE_TYPE }`        |
 | Key-Value Table |      `table<KEY_TYPE, VALUE_TYPE>`       |
 |  Table Literal  | `{ key1: VALUE_TYPE, key2: VALUE_TYPE }` |
 |    Function     |     `fun(PARAM: TYPE): RETURN_TYPE`      |
 
+Unions may need to be placed in parentheses in certain situations, such as when defining an array that contains multiple value types:
+```lua
+---@type (string | integer)[]
+local myArray = {}
+```
 
 
 ## Understanding This Page
