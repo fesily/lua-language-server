@@ -1048,21 +1048,50 @@ function request(url) end
 <br>
 
 ### `@source`
-Document a source that is in another language. Used internally but is not recommended for use by users.
+Provide a reference to some source code which lives in another file. When
+searching for the defintion of an item, its `@source` will be used.
 
 **Syntax**
 
-`---@source <filename>`
+`@source <path>`
 
 **Examples**
 <details>
-<summary>Link to a file</summary>
+<summary>Link to file using absolute path</summary>
 
 ```lua
----@source lmathlib.c:220:11
-function math.max(...) end
+---@source C:/Users/me/Documents/program/myFile.c
+local a
+```
 
-math.max(1, 2)
+</details>
+
+<details>
+<summary>Link to file using URI</summary>
+
+```lua
+---@source file:///C:/Users/me/Documents/program/myFile.c:10
+local b
+```
+
+</details>
+
+<details>
+<summary>Link to file using relative path</summary>
+
+```lua
+---@source local/file.c
+local c
+```
+
+</details>
+
+<details>
+<summary>Link to line and character in file</summary>
+
+```lua
+---@source local/file.c:10:8
+local d
 ```
 
 </details>
