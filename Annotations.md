@@ -731,6 +731,8 @@ local pB = -pA
 <details>
 <summary>Declare <code>__call</code> Metamethod</summary>
 
+> ℹ️ Note: it is recommended to instead use [@overload](#overload) to specify the call signature for a class.
+
 ```lua
 ---@class URL
 ---@operator call:string
@@ -758,6 +760,23 @@ Define an additional signature for a function. This does not allow descriptions 
 ---@return boolean success If the object was successfully removed
 ---@overload fun(objectID: integer): boolean
 local function removeObject(objectID, whenOutOfView) end
+```
+
+</details>
+
+<details>
+<summary>Define Class Call Signature</summary>
+
+```lua
+---@overload fun(a: string): boolean
+local foo = setmetatable({}, {
+	__call = function(a)
+		print(a)
+        return true
+	end,
+})
+
+local bool = foo("myString")
 ```
 
 </details>
