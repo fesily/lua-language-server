@@ -1,3 +1,7 @@
+> ⚠️ **Warning**
+>
+> This wiki has been replaced by the wiki on [our website](https://luals.github.io/wiki/). This wiki will be removed in the future.
+
 # Welcome
 
 ***Lua development just got a whole lot better*** 🧠
