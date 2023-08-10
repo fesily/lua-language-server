@@ -1,3 +1,7 @@
+> ⚠️ **Warning**
+>
+> This wiki has been replaced by the wiki on [our website](https://luals.github.io/wiki/configuration). This wiki will be removed in the future.
+
 # The Configuration File
 There are multiple ways to provide a configuration file to customize how the language server operates. A full list of the available configuration settings can be found on the [settings page](https://github.com/LuaLS/lua-language-server/wiki/Settings).
 

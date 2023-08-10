@@ -1,3 +1,7 @@
+> ⚠️ **Warning**
+>
+> This wiki has been replaced by the wiki on [our website](https://luals.github.io/wiki/). This wiki will be removed in the future.
+
 This page goes over getting set up in the various environments that the Lua language server can be used in.
 
 You'll probably also want to get familiar with [LuaCATS annotations](https://github.com/LuaLS/lua-language-server/wiki/Annotations).

@@ -1,3 +1,7 @@
+> ⚠️ **Warning**
+>
+> This wiki has been replaced by the wiki on [our website](https://luals.github.io/wiki/addons). This wiki will be removed in the future.
+
 An addon allows users to add content to the Lua Language Server. [LLS-Addons][LLS-Addons] is a repository where you can find community-created addons.
 
 An addon can:

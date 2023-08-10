@@ -1,3 +1,7 @@
+> ⚠️ **Warning**
+>
+> This wiki has been replaced by the wiki on [our website](https://luals.github.io/wiki/annotations/#annotation-formatting). This wiki will be removed in the future.
+
 # Formatting Annotations
 This page explains how you can format your annotations to have special appearances.
 

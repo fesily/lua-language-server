@@ -1,3 +1,7 @@
+> ⚠️ **Warning**
+>
+> This wiki has been replaced by the wiki on [our website](https://luals.github.io/wiki/type-checking). This wiki will be removed in the future.
+
 # Dynamic Type Checking
 The Lua language server offers type checking that helps you keep track of the types in your code and warn you when a potential type error is arising.
 

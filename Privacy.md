@@ -1,3 +1,7 @@
+> ⚠️ **Warning**
+>
+> This wiki has been replaced by the wiki on [our website](https://luals.github.io/privacy). This wiki will be removed in the future.
+
 # Overview
 
 > Telemetry has been removed since `v3.6.5`, thank you for your positive feedback in the community!

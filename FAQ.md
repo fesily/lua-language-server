@@ -1,3 +1,7 @@
+> ⚠️ **Warning**
+>
+> This wiki has been replaced by the wiki on [our website](https://luals.github.io/wiki/faq/). This wiki will be removed in the future.
+
 # Frequently Asked Questions
 
 ## Where Can I Find the Log File?

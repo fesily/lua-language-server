@@ -1,3 +1,7 @@
+> ⚠️ **Warning**
+>
+> This wiki has been replaced by the wiki on [our website](https://luals.github.io/wiki/settings/). This wiki will be removed in the future.
+
 # Settings
 A list of all settings that can be used to customize how the language server operates.
 

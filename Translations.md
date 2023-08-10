@@ -1,3 +1,7 @@
+> ⚠️ **Warning**
+>
+> This wiki has been replaced by the wiki on [our website](https://luals.github.io/wiki/translations). This wiki will be removed in the future.
+
 # Translations
 Translations can be found in the [`locale/`](https://github.com/LuaLS/lua-language-server/tree/master/locale) directory within a directory of their own. These directories should be named using the [BCP 47 Code](https://docs.microsoft.com/en-us/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a) for that language.
 

@@ -1,3 +1,7 @@
+> ⚠️ **Warning**
+>
+> This wiki has been replaced by the wiki on [our website](https://luals.github.io/wiki/export-docs/). This wiki will be removed in the future.
+
 The language server can be used to export documentation of your project as JSON and Markdown.
 
 # Example

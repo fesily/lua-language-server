@@ -1,3 +1,7 @@
+> ⚠️ **Warning**
+>
+> This wiki has been replaced by the wiki on [our website](https://luals.github.io/wiki/diagnostics). This wiki will be removed in the future.
+
 # Diagnostics
 There are many different diagnostics that can be used to report information at different severities such as `Information`, `Warning`, `Error`, etc.
 

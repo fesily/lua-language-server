@@ -1,3 +1,7 @@
+> ⚠️ **Warning**
+>
+> This wiki has been replaced by the wiki on [our website](https://luals.github.io/wiki/formatter/). This wiki will be removed in the future.
+
 # Formatter
 The language server also offers a code formatter so you can easily make your code prettier.
 

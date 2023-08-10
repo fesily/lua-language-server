@@ -1,3 +1,7 @@
+> ⚠️ **Warning**
+>
+> This wiki has been replaced by the wiki on [our website](https://luals.github.io/wiki/plugins/). This wiki will be removed in the future.
+
 # Plugins
 Plugins can be used to modify how the language server works.
 

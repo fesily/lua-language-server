@@ -1,3 +1,7 @@
+> ⚠️ **Warning**
+>
+> This wiki has been replaced by the wiki on [our website](https://luals.github.io/wiki/developing). This wiki will be removed in the future.
+
 # Developing
 Hello! Thank you for taking an interest in helping improve the language server.
 

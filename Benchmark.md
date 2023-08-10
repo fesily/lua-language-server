@@ -1,3 +1,7 @@
+> ⚠️ **Warning**
+>
+> This wiki has been replaced by the wiki on [our website](https://luals.github.io/wiki/performance). This wiki will be removed in the future.
+
 # Performance Benchmark
 
 ## Background

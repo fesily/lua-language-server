@@ -1,3 +1,7 @@
+> ⚠️ **Warning**
+>
+> This wiki has been replaced by the wiki on [our website](https://luals.github.io/wiki/definition-files). This wiki will be removed in the future.
+
 # Libraries
 Libraries can be used to provide definitions that allow you to very closely emulate your target environment without actually `require`-ing them.
 

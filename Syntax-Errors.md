@@ -1,3 +1,7 @@
+> ⚠️ **Warning**
+>
+> This wiki has been replaced by the wiki on [our website](https://luals.github.io/wiki/syntax-errors/). This wiki will be removed in the future.
+
 # Syntax Errors
 A syntax error will appear when the Lua syntax has been violated, which will result in a error at runtime.
 

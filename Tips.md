@@ -1,3 +1,7 @@
+> ⚠️ **Warning**
+>
+> This wiki has been replaced by the wiki on [our website](https://luals.github.io/wiki/). This wiki will be removed in the future.
+
 # Tips
 This page includes some lesser known tips that don't really fit anywhere else in the wiki.
 

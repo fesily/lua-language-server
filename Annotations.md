@@ -1,3 +1,7 @@
+> ⚠️ **Warning**
+>
+> This wiki has been replaced by the wiki on [our website](https://luals.github.io/wiki/annotations). This wiki will be removed in the future.
+
 # Annotations
 The language server does its best to infer types through contextual analysis, however, sometimes manual documentation is necessary to improve completion and signature information.
 

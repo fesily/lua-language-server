@@ -1,3 +1,7 @@
+> ⚠️ **Warning**
+>
+> This wiki has been replaced by the wiki on [our website](https://luals.github.io/wiki/developing/#file-structure). This wiki will be removed in the future.
+
 # Project File Structure
 Below is an explanation of the project file structure. Hovering an item will show a description, clicking a linked item will jump to more detailed info, if available.
 
